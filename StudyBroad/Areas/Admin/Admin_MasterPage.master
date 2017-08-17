@@ -1,0 +1,227 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_MasterPage.master.cs" Inherits="Areas_Admin_Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>Study Broad | Admin</title>
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="../../Assets/Admin/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link href="../../Assets/Admin/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../Assets/Admin/dist/css/AdminLTE.min.css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../../Assets/Admin/dist/css/skins/_all-skins.min.css" />
+    <!--Main-->
+    <link href="../../Assets/Admin/dist/css/Main.css" rel="stylesheet" />
+
+    <!-- jQuery 2.1.4 -->
+    <script src="../../Assets/Admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="../../Assets/Client/js/jquery.min.js"></script>
+    <!--Validation-->
+    <script src="../../Assets/Admin/js/Validation.js"></script>
+    <script src="../../Assets/Admin/js/Main.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="../../Assets/Admin/bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../Assets/Admin/dist/js/app.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../Assets/Admin/dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../Assets/Admin/dist/js/demo.js"></script>
+    <style>
+        .invalid {
+            border: 1px solid #dd4c4c !important;
+        }
+
+        .error_label {
+            color: #dd4c4c !important;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition skin-green sidebar-mini">
+    <form id="frm_Admin" runat="server">
+        <div class="wrapper">
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="DashBoard.aspx" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>S</b>DT</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>Admin</b>SDT</span>
+                </a>
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <asp:Image runat="server" ID="imgAvartar1" CssClass="user-image img-responsive img-circle" />
+                                    <span class="hidden-xs">
+                                        <asp:Label runat="server" ID="lbUserName_Header">
+                                        </asp:Label>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <asp:Image runat="server" CssClass="img-responsive center-block img-circle" ID="imgAvatar" />
+                                        <p>
+                                            <asp:Label runat="server" ID="lbUserName">
+                                            </asp:Label>
+                                        </p>
+                                    </li>
+
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <asp:LinkButton runat="server" ID="btn_LogOut" CssClass="btn btn-default btn-flat" OnClick="btn_LogOut_Click">Log out</asp:LinkButton>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <%--Content--%>
+            <asp:ContentPlaceHolder ID="content_Admin" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--End content--%>
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                </div>
+                <strong>Copyright &copy; 2016 <a>StudyBroad</a> </strong>All rights reserved.
+            </footer>
+        </div>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <asp:Image runat="server" ID="imgAvatar_SideBar" CssClass="img-responsive img-circle center-block" />
+                    </div>
+                    <div class="pull-left info">
+                        <p>
+                            <asp:Label runat="server" ID="lbUserName_SideBar"></asp:Label></p>
+                        <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+                    </div>
+                </div>
+                <!-- search form -->
+                <div class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search..." />
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="header">Quản lý nội dung</li>
+                    <li class="active">
+                        <a href="DashBoard.aspx">
+                            <i class="fa fa-dashboard"></i><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Manage_Course.aspx">
+                            <i class="fa fa-th"></i><span>Khóa học</span>
+                            <small class="label pull-right bg-green">new</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Manage_CourseCategory.aspx">
+                            <i class="fa fa-pie-chart"></i>
+                            <span>Danh mục khóa học</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-files-o"></i>
+                            <span>Đăng ký khóa học</span>
+                            <span class="label label-primary pull-right">4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Manage_Member.aspx">
+                            <i class="fa fa-users"></i>
+                            <span>Thành viên</span>
+                        </a>
+                    </li>
+                    <li class="header">Quản lý website</li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-edit"></i><span>Trang nội dung</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Manage_Newsletter.aspx">
+                            <i class="fa fa-book"></i><span>Blog</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="Manage_NewsCategory.aspx">
+                            <i class="fa fa-book"></i><span>Danh mục blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar"></i><span>Menu</span>
+                            <small class="label pull-right bg-red">3</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope"></i><span>Giao diện</span>
+                            <small class="label pull-right bg-yellow">12</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-folder"></i><span>File</span>
+                        </a>
+                    </li>
+                    <li class="header">Cấu hình website</li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i><span>Cấu hình</span>
+                            <i class="fa fa-angle-down pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-cog"></i>Cấu hình chung</a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-bell"></i>Thông báo</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i>Thanh toán</a></li>
+                            <li><a href="Manage_Domain.aspx"><i class="fa fa-globe"></i>Tên miền</a></li>
+                            <li><a href="Manage_Employee.aspx"><i class="fa fa-user"></i>Tài khoản</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\bin\Debug\BUS.dll
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\bin\Debug\BUS.pdb
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\obj\Debug\BUS.dll
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\obj\Debug\BUS.pdb
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\bin\Debug\DAL.dll
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\bin\Debug\DAL.pdb
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\bin\Debug\Facebook.dll
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\BUS\bin\Debug\Facebook.xml

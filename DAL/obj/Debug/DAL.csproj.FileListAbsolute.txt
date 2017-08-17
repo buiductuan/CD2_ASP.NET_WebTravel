@@ -1,0 +1,6 @@
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\DAL\bin\Debug\DAL.dll.config
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\DAL\bin\Debug\DAL.dll
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\DAL\bin\Debug\DAL.pdb
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\DAL\obj\Debug\DAL.dll
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\DAL\obj\Debug\DAL.pdb
+H:\IMPORTANT\Document-Shool\2016-2017\ASP.NET\StudyBroad\Application\StudyBroad\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
